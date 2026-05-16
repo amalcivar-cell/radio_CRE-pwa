@@ -108,11 +108,18 @@
      transform: translateY(-1px); /* Pequeño efecto de elevación al pasar el mouse */
      text-decoration: underline;  /* El subrayado solo aparece elegantemente al pasar el cursor */
     }
-    
-    .social-row a.whatsapp-icon:hover svg {
-    fill: #25D366;
+
+    .social-row a.whatsapp-icon svg {
+    fill: #25D366; /* Color verde tradicional de WhatsApp al pasar el mouse */
+    width: 20px;
+    height: 20px;
     }
 
+    .social-row a.whatsapp-icon {
+      display: flex;
+      align-items: center;
+    }
+    
   </style>
 </head>
 <body>
