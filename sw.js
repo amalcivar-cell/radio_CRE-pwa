@@ -2,7 +2,9 @@ const CACHE_NAME = 'radio-pwa-v1';
 const ASSETS = [
   './',
   './index.html',
-  './manifest.json'
+  './manifest.json',
+  './icono.png',
+  './fondo.png'
 ];
 
 // Instalar el Service Worker y guardar la interfaz en caché
