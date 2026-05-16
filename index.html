@@ -91,6 +91,24 @@
     .btn-play:active {
       transform: scale(0.98);
     }
+
+    .landing-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none; /* Quita el subrayado feo por defecto */
+    transition: color 0.2s, transform 0.2s;
+    opacity: 0.8;
+  }
+
+  .landing-link:hover {
+    opacity: 1;
+    transform: translateY(-1px); /* Pequeño efecto de elevación al pasar el mouse */
+    text-decoration: underline;  /* El subrayado solo aparece elegantemente al pasar el cursor */
+  }
+
   </style>
 </head>
 <body>
@@ -106,6 +124,11 @@
     <audio id="audioStream" src="https://radio.kapchosting.com/8120/stream"></audio>
     
     <button class="btn-play" id="playBtn">ESCUCHAR EN VIVO</button>
+    
+    <!-- NUEVO: Enlace a tu página web o Landing Page -->
+    <a href="https://radiocresatelital.com" target="_blank" rel="noopener" class="landing-link">
+      Visitar nuestra página web
+    </a>
   </div>
   
     <script>
