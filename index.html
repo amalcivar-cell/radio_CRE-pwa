@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CRE Satelital en Vivo</title>
+  <title>Radio CRE Satelital en Vivo</title>
   <link rel="manifest" href="manifest.json">
   <!-- Color de la barra de estado móvil con el amarillo oficial -->
   <meta name="theme-color" content="#FAD107">
@@ -27,8 +27,6 @@
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: fixed;
-      /* background-color: var(--bg-color); */ /* Fallback si la imagen no carga */
-      /* color: var(--text-dark); */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -118,10 +116,10 @@
     
     }
 
-    /*.social-row a.whatsapp-icon {
-     /* display: flex;
-     /*align-items: center;
-    /*}
+    .social-row a.whatsapp-icon {
+     display: flex;
+     align-items: center;
+    }
 
   </style>
 </head>
@@ -129,9 +127,9 @@
 
   <div class="player-card">
     <!-- Muestra el archivo de imagen que subiste a tu GitHub -->
-    <img class="logo-radio" src="icono.png" alt="Logo CRE Satelital">
+    <img class="logo-radio" src="icon-512x512.png" alt="Logo CRE Satelital">
     
-    <h1>CRE Satelital</h1>
+    <h1>Radio CRE Satelital</h1>
     <p id="status">Listo para conectar</p>
 
     <!-- Tu origen de URL de streaming -->
@@ -160,11 +158,11 @@
     function updateMediaSession() {
       if ('mediaSession' in navigator) {
         navigator.mediaSession.metadata = new MediaMetadata({
-          title: 'CRE Satelital',
+          title: 'Radio CRE Satelital',
           artist: 'En Vivo',
           album: 'Radio PWA',
           artwork: [
-            { src: 'icono.png', sizes: '512x512', type: 'image/png' }
+            { src: 'icon-512x512.png', sizes: '512x512', type: 'image/png' }
           ]
         });
 
