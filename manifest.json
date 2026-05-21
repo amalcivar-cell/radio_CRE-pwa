@@ -1,6 +1,6 @@
 {
   "name": "Radio CRE Satelital",
-  "short_name": "Radio CRE.",
+  "short_name": "Radio CRE",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#001A57",
